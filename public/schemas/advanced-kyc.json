@@ -1,0 +1,112 @@
+[
+  {
+    "id": "entity_type",
+    "label": "Entity Type",
+    "type": "radio_buttons",
+    "required": true,
+    "options": ["Individual", "Corporation", "Partnership", "Trust", "Other"]
+  },
+  {
+    "id": "legal_name",
+    "label": "Legal Entity Name",
+    "type": "text",
+    "required": true,
+    "placeholder": "Enter the full legal name of the entity",
+    "maxLength": 200
+  },
+  {
+    "id": "registration_number",
+    "label": "Registration Number",
+    "type": "text",
+    "required": true,
+    "placeholder": "Enter registration number",
+    "maxLength": 50
+  },
+  {
+    "id": "country_of_incorporation",
+    "label": "Country of Incorporation",
+    "type": "drop_down",
+    "required": true,
+    "options": [
+      "United States",
+      "United Kingdom",
+      "Canada",
+      "Germany",
+      "France",
+      "Australia",
+      "Other"
+    ],
+    "placeholder": "Select country of incorporation"
+  },
+  {
+    "id": "business_address",
+    "label": "Business Address",
+    "type": "textarea",
+    "required": true,
+    "placeholder": "Enter complete business address",
+    "rows": 3,
+    "maxLength": 500
+  },
+  {
+    "id": "industry_sector",
+    "label": "Industry Sector",
+    "type": "drop_down",
+    "required": true,
+    "options": [
+      "Financial Services",
+      "Technology",
+      "Healthcare",
+      "Manufacturing",
+      "Retail",
+      "Other"
+    ],
+    "placeholder": "Select primary industry sector"
+  },
+  {
+    "id": "annual_revenue",
+    "label": "Annual Revenue",
+    "type": "drop_down",
+    "required": true,
+    "options": [
+      "Under $1M",
+      "$1M - $10M",
+      "$10M - $50M",
+      "$50M - $100M",
+      "Over $100M"
+    ],
+    "placeholder": "Select annual revenue range"
+  },
+  {
+    "id": "beneficial_owners",
+    "label": "Number of Beneficial Owners",
+    "type": "drop_down",
+    "required": true,
+    "options": ["1-5", "6-10", "11-25", "Over 25"],
+    "placeholder": "Select number of beneficial owners"
+  },
+  {
+    "id": "pep_involvement",
+    "label": "Are any beneficial owners Politically Exposed Persons (PEPs)?",
+    "type": "radio_buttons",
+    "required": true,
+    "options": ["Yes", "No", "Don't Know"]
+  },
+  {
+    "id": "certificate_of_incorporation",
+    "label": "Certificate of Incorporation",
+    "type": "file_upload",
+    "required": true,
+    "accept": ".pdf,.jpg,.jpeg,.png",
+    "maxSize": 10,
+    "multiple": false
+  },
+  {
+    "id": "financial_statements",
+    "label": "Financial Statements (Last 2 Years)",
+    "type": "file_upload",
+    "required": true,
+    "accept": ".pdf,.jpg,.jpeg,.png",
+    "maxSize": 10,
+    "multiple": true
+  }
+]

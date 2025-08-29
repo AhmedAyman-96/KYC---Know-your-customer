@@ -1,0 +1,143 @@
+[
+  {
+    "id": "entity_type",
+    "label": "Entity Type",
+    "type": "radio_buttons",
+    "required": true,
+    "options": [
+      "Public Corporation",
+      "Private Corporation",
+      "Subsidiary",
+      "Holding Company",
+      "Other"
+    ]
+  },
+  {
+    "id": "legal_name",
+    "label": "Legal Entity Name",
+    "type": "text",
+    "required": true,
+    "placeholder": "Enter the full legal name of the corporation",
+    "maxLength": 200
+  },
+  {
+    "id": "registration_number",
+    "label": "Corporate Registration Number",
+    "type": "text",
+    "required": true,
+    "placeholder": "Enter corporate registration number",
+    "maxLength": 50
+  },
+  {
+    "id": "country_of_incorporation",
+    "label": "Country of Incorporation",
+    "type": "drop_down",
+    "required": true,
+    "options": [
+      "United States",
+      "United Kingdom",
+      "Canada",
+      "Germany",
+      "France",
+      "Australia",
+      "Other"
+    ],
+    "placeholder": "Select country of incorporation"
+  },
+  {
+    "id": "registered_address",
+    "label": "Registered Corporate Address",
+    "type": "textarea",
+    "required": true,
+    "placeholder": "Enter complete registered corporate address",
+    "rows": 3,
+    "maxLength": 500
+  },
+  {
+    "id": "industry_classification",
+    "label": "Industry Classification",
+    "type": "drop_down",
+    "required": true,
+    "options": [
+      "Financial Services",
+      "Technology",
+      "Healthcare",
+      "Manufacturing",
+      "Energy",
+      "Other"
+    ],
+    "placeholder": "Select primary industry classification"
+  },
+  {
+    "id": "annual_revenue",
+    "label": "Annual Revenue",
+    "type": "drop_down",
+    "required": true,
+    "options": [
+      "$1M - $10M",
+      "$10M - $50M",
+      "$50M - $100M",
+      "$100M - $500M",
+      "$500M - $1B",
+      "Over $1B"
+    ],
+    "placeholder": "Select annual revenue range"
+  },
+  {
+    "id": "number_of_employees",
+    "label": "Number of Employees",
+    "type": "drop_down",
+    "required": true,
+    "options": [
+      "1-50",
+      "51-100",
+      "101-500",
+      "501-1000",
+      "1001-5000",
+      "Over 5000"
+    ],
+    "placeholder": "Select number of employees"
+  },
+  {
+    "id": "beneficial_owners_count",
+    "label": "Number of Beneficial Owners",
+    "type": "drop_down",
+    "required": true,
+    "options": ["1-5", "6-10", "11-25", "26-50", "Over 50"],
+    "placeholder": "Select number of beneficial owners"
+  },
+  {
+    "id": "pep_involvement",
+    "label": "Are any beneficial owners Politically Exposed Persons (PEPs)?",
+    "type": "radio_buttons",
+    "required": true,
+    "options": ["Yes", "No", "Don't Know"]
+  },
+  {
+    "id": "certificate_of_incorporation",
+    "label": "Certificate of Incorporation",
+    "type": "file_upload",
+    "required": true,
+    "accept": ".pdf,.jpg,.jpeg,.png",
+    "maxSize": 10,
+    "multiple": false
+  },
+  {
+    "id": "financial_statements",
+    "label": "Audited Financial Statements (Last 2 Years)",
+    "type": "file_upload",
+    "required": true,
+    "accept": ".pdf,.jpg,.jpeg,.png",
+    "maxSize": 10,
+    "multiple": true
+  },
+  {
+    "id": "organizational_chart",
+    "label": "Organizational Chart",
+    "type": "file_upload",
+    "required": true,
+    "accept": ".pdf,.jpg,.jpeg,.png",
+    "maxSize": 10,
+    "multiple": false
+  }
+]

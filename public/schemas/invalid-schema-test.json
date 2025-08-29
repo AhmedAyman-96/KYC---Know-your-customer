@@ -1,0 +1,72 @@
+[
+  {
+    "id": "valid_field",
+    "label": "Valid Field",
+    "type": "text",
+    "required": true,
+    "placeholder": "This field is valid"
+  },
+  {
+    "id": "invalid_type",
+    "label": "Invalid Type",
+    "type": "invalid_type",
+    "required": true
+  },
+  {
+    "id": "missing_label",
+    "type": "text",
+    "required": true
+  },
+  {
+    "id": "invalid_date_format",
+    "label": "Invalid Date Format",
+    "type": "date_picker",
+    "required": true,
+    "maxDate": "invalid-date-format"
+  },
+  {
+    "id": "invalid_number_range",
+    "label": "Invalid Number Range",
+    "type": "number",
+    "required": true,
+    "min": 100,
+    "max": 50
+  },
+  {
+    "id": "invalid_multi_choice",
+    "label": "Invalid Multi Choice",
+    "type": "multi_choice",
+    "required": true,
+    "options": ["Option 1", "Option 2"],
+    "min": 5,
+    "max": 3
+  },
+  {
+    "id": "invalid_file_upload",
+    "label": "Invalid File Upload",
+    "type": "file_upload",
+    "required": true,
+    "maxSize": "invalid-size"
+  },
+  {
+    "id": "invalid_text_validation",
+    "label": "Invalid Text Validation",
+    "type": "text",
+    "required": true,
+    "minLength": "not-a-number",
+    "maxLength": "also-not-a-number"
+  },
+  {
+    "id": "missing_options",
+    "label": "Missing Options",
+    "type": "drop_down",
+    "required": true
+  },
+  {
+    "id": "invalid_radio_buttons",
+    "label": "Invalid Radio Buttons",
+    "type": "radio_buttons",
+    "required": true,
+    "options": []
+  }
+]

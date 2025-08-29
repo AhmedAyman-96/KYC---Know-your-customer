@@ -1,0 +1,135 @@
+[
+  {
+    "id": "account_type",
+    "label": "Account Type",
+    "type": "radio_buttons",
+    "required": true,
+    "options": ["Individual", "Joint", "Corporate", "Trust", "Other"]
+  },
+  {
+    "id": "full_name",
+    "label": "Full Legal Name",
+    "type": "text",
+    "required": true,
+    "placeholder": "Enter your full legal name as it appears on your ID",
+    "maxLength": 100
+  },
+  {
+    "id": "date_of_birth",
+    "label": "Date of Birth",
+    "type": "date_picker",
+    "required": true,
+    "maxDate": "today",
+    "placeholder": "Select your date of birth"
+  },
+  {
+    "id": "email_address",
+    "label": "Email Address",
+    "type": "text",
+    "required": true,
+    "placeholder": "Enter your primary email address"
+  },
+  {
+    "id": "residential_address",
+    "label": "Residential Address",
+    "type": "textarea",
+    "required": true,
+    "placeholder": "Enter your complete residential address",
+    "rows": 3,
+    "maxLength": 500
+  },
+  {
+    "id": "annual_income",
+    "label": "Annual Income",
+    "type": "drop_down",
+    "required": true,
+    "options": [
+      "Under $25,000",
+      "$25,000 - $50,000",
+      "$50,001 - $75,000",
+      "$75,001 - $100,000",
+      "$100,001 - $200,000",
+      "Over $200,000"
+    ],
+    "placeholder": "Select your annual income range"
+  },
+  {
+    "id": "investment_experience",
+    "label": "Investment Experience",
+    "type": "radio_buttons",
+    "required": true,
+    "options": ["None", "Limited", "Moderate", "Extensive"]
+  },
+  {
+    "id": "risk_tolerance",
+    "label": "Risk Tolerance",
+    "type": "radio_buttons",
+    "required": true,
+    "options": ["Conservative", "Moderate", "Aggressive", "Very Aggressive"]
+  },
+  {
+    "id": "investment_products",
+    "label": "Investment Products of Interest",
+    "type": "multi_choice",
+    "required": true,
+    "options": [
+      "Stocks",
+      "Bonds",
+      "Mutual Funds",
+      "ETFs",
+      "Options",
+      "Cryptocurrencies",
+      "Other"
+    ],
+    "min": 1,
+    "max": 4
+  },
+  {
+    "id": "expected_investment_amount",
+    "label": "Expected Initial Investment Amount",
+    "type": "drop_down",
+    "required": true,
+    "options": [
+      "Under $10,000",
+      "$10,000 - $25,000",
+      "$25,001 - $50,000",
+      "$50,001 - $100,000",
+      "Over $100,000"
+    ],
+    "placeholder": "Select expected initial investment amount"
+  },
+  {
+    "id": "politically_exposed_person",
+    "label": "Are you a Politically Exposed Person (PEP)?",
+    "type": "radio_buttons",
+    "required": true,
+    "options": ["Yes", "No", "Don't Know"]
+  },
+  {
+    "id": "id_document_upload",
+    "label": "Upload ID Document",
+    "type": "file_upload",
+    "required": true,
+    "accept": ".pdf,.jpg,.jpeg,.png",
+    "maxSize": 10,
+    "multiple": false
+  },
+  {
+    "id": "proof_of_address",
+    "label": "Proof of Address",
+    "type": "file_upload",
+    "required": true,
+    "accept": ".pdf,.jpg,.jpeg,.png",
+    "maxSize": 10,
+    "multiple": false
+  },
+  {
+    "id": "bank_statement",
+    "label": "Recent Bank Statement",
+    "type": "file_upload",
+    "required": true,
+    "accept": ".pdf,.jpg,.jpeg,.png",
+    "maxSize": 10,
+    "multiple": false
+  }
+]

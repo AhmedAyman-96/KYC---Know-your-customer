@@ -1,0 +1,119 @@
+[
+  {
+    "id": "account_type",
+    "label": "Account Type",
+    "type": "radio_buttons",
+    "required": true,
+    "options": ["Personal", "Business", "Student", "Other"]
+  },
+  {
+    "id": "full_name",
+    "label": "Full Legal Name",
+    "type": "text",
+    "required": true,
+    "placeholder": "Enter your full legal name as it appears on your ID",
+    "maxLength": 100
+  },
+  {
+    "id": "date_of_birth",
+    "label": "Date of Birth",
+    "type": "date_picker",
+    "required": true,
+    "maxDate": "today",
+    "placeholder": "Select your date of birth"
+  },
+  {
+    "id": "email_address",
+    "label": "Email Address",
+    "type": "text",
+    "required": true,
+    "placeholder": "Enter your primary email address"
+  },
+  {
+    "id": "phone_number",
+    "label": "Phone Number",
+    "type": "text",
+    "required": true,
+    "placeholder": "Enter your primary phone number"
+  },
+  {
+    "id": "residential_address",
+    "label": "Residential Address",
+    "type": "textarea",
+    "required": true,
+    "placeholder": "Enter your complete residential address",
+    "rows": 3,
+    "maxLength": 500
+  },
+  {
+    "id": "annual_income",
+    "label": "Annual Income",
+    "type": "drop_down",
+    "required": true,
+    "options": [
+      "Under $25,000",
+      "$25,000 - $50,000",
+      "$50,001 - $75,000",
+      "$75,001 - $100,000",
+      "Over $100,000"
+    ],
+    "placeholder": "Select your annual income range"
+  },
+  {
+    "id": "account_purposes",
+    "label": "Account Purposes",
+    "type": "multi_choice",
+    "required": true,
+    "options": [
+      "Personal Banking",
+      "Online Shopping",
+      "Bill Payments",
+      "Money Transfers",
+      "Investment",
+      "Other"
+    ],
+    "min": 1,
+    "max": 3
+  },
+  {
+    "id": "digital_banking_experience",
+    "label": "Digital Banking Experience",
+    "type": "radio_buttons",
+    "required": true,
+    "options": ["None", "Limited", "Moderate", "Extensive"]
+  },
+  {
+    "id": "id_document_upload",
+    "label": "Upload ID Document",
+    "type": "file_upload",
+    "required": true,
+    "accept": ".pdf,.jpg,.jpeg,.png",
+    "maxSize": 10,
+    "multiple": false
+  },
+  {
+    "id": "selfie_verification",
+    "label": "Selfie for Verification",
+    "type": "file_upload",
+    "required": true,
+    "accept": ".jpg,.jpeg,.png",
+    "maxSize": 5,
+    "multiple": false
+  },
+  {
+    "id": "proof_of_address",
+    "label": "Proof of Address",
+    "type": "file_upload",
+    "required": true,
+    "accept": ".pdf,.jpg,.jpeg,.png",
+    "maxSize": 10,
+    "multiple": false
+  },
+  {
+    "id": "terms_acceptance",
+    "label": "Terms and Conditions",
+    "type": "radio_buttons",
+    "required": true,
+    "options": ["I accept the Terms and Conditions and Privacy Policy"]
+  }
+]

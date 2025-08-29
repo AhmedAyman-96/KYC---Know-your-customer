@@ -1,0 +1,44 @@
+[
+  {
+    "id": "full_name",
+    "label": "Full Name",
+    "type": "text",
+    "required": true,
+    "placeholder": "Enter your full name",
+    "maxLength": 100
+  },
+  {
+    "id": "email",
+    "label": "Email Address",
+    "type": "text",
+    "required": true,
+    "placeholder": "Enter your email address"
+  },
+  {
+    "id": "company_logo",
+    "label": "Company Logo",
+    "type": "file_upload",
+    "required": false,
+    "accept": ".jpg,.jpeg,.png,.gif",
+    "maxSize": 5,
+    "multiple": false
+  },
+  {
+    "id": "profile_picture",
+    "label": "Profile Picture",
+    "type": "file_upload",
+    "required": false,
+    "accept": ".jpg,.jpeg,.png,.gif",
+    "maxSize": 5,
+    "multiple": false
+  },
+  {
+    "id": "id_document",
+    "label": "ID Document",
+    "type": "file_upload",
+    "required": true,
+    "accept": ".pdf,.jpg,.jpeg,.png",
+    "maxSize": 10,
+    "multiple": false
+  }
+]
