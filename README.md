@@ -296,9 +296,4 @@ kyc-form/
 # Run all tests
 pnpm run test:run
 
-# Run tests in watch mode
-pnpm run test
-
-# Run tests with coverage
-pnpm run test:coverage
 ```
